@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -65,4 +65,13 @@ footer {
   height: auto;
   border-radius: 10px;
   margin-bottom: 1rem;
+}
+
+.videos video {
+  /*max-width: 100%; /* La vidéo ne dépassera pas la largeur de son conteneur */
+  width: 600px; /* Définit une largeur fixe de 600 pixels */
+  height: auto; /* Maintient le ratio d'aspect */
+  display: block; /* Supprime les espaces blancs autour des vidéos */
+  margin: 1rem auto; /* Centre les vidéos avec un espacement */
+  border-radius: 8px; /* Ajoute des coins arrondis (facultatif) */
 }

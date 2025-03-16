@@ -6,9 +6,13 @@ fetch("data/sections.json")
       const sectionElement = document.createElement("section");
       sectionElement.innerHTML = `
         <h2>${section.title}</h2>
-        <img src="${section.image}" alt="${section.title}" class="section-image" />
+        <img src="${section.image}" alt="${
+        section.title
+      }" class="section-image" />
         <p>${section.content}</p>
-        <a href="detail.html?id=${index}" class="details-link">View Details</a>
+        <a href="detail.html?id=${
+          index + 1
+        }" class="details-link">View Details</a>
       `;
       container.appendChild(sectionElement);
     });

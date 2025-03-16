@@ -1,0 +1,22 @@
+{
+    "titre": "Detail 1",
+    "video1": "videos/video1.mp4",
+    "video2": "videos/video1.mp4",
+    "video3": "videos/video1.mp4",
+    "video4": "https://www.youtube.com/embed/ppBJXG34VTo",
+    "synopsis": "This is the synopsis for detail 1. It provides an overview of the content.",
+    "details": [
+        {
+            "titre": "Sub-detail 1",
+            "detail": "This is the first sub-detail for detail 1."
+        },
+        {
+            "titre": "Sub-detail 2",
+            "detail": "This is the second sub-detail for detail 1."
+        },
+        {
+            "titre": "Sub-detail 3",
+            "detail": "This is the third sub-detail for detail 1."
+        }
+    ]
+}
