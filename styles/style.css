@@ -67,11 +67,19 @@ footer {
   margin-bottom: 1rem;
 }
 
-.videos video {
-  /*max-width: 100%; /* La vidéo ne dépassera pas la largeur de son conteneur */
-  width: 600px; /* Définit une largeur fixe de 600 pixels */
+.videos video,
+.video-iframe {
+  width: 600px; /* Largeur fixe pour les grands écrans */
   height: auto; /* Maintient le ratio d'aspect */
-  display: block; /* Supprime les espaces blancs autour des vidéos */
-  margin: 1rem auto; /* Centre les vidéos avec un espacement */
-  border-radius: 8px; /* Ajoute des coins arrondis (facultatif) */
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px; /* Coins arrondis (facultatif) */
+}
+
+@media (max-width: 768px) {
+  .videos video,
+  .video-iframe {
+    width: 95%; /* La vidéo occupe toute la largeur disponible */
+    max-width: 100%; /* Ne dépasse pas la largeur du conteneur */
+  }
 }
